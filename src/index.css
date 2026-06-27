@@ -1,0 +1,172 @@
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:'PT Sans','Montserrat',sans-serif;color:#16202B;background:#fff;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block;max-width:100%}
+a{text-decoration:none;color:inherit}
+section{scroll-margin-top:108px}
+::selection{background:#DAA50B;color:#0a2a4a}
+h1,h2,h3,h4,p{margin:0}
+
+/* HEADER */
+#site-header{position:sticky;top:0;z-index:50;background:#fff;box-shadow:0 1px 0 #E3E8EF,0 6px 22px rgba(8,40,75,.05)}
+.utility-bar{background:#062F58;color:#cdd9e8}
+.utility-inner{max-width:1200px;margin:0 auto;padding:0 28px;height:38px;display:flex;align-items:center;justify-content:space-between;gap:16px;font-size:12.5px;letter-spacing:.02em;flex-wrap:wrap}
+.utility-left{display:flex;align-items:center;gap:22px;flex-wrap:wrap}
+.utility-left .sep{opacity:.45}
+.utility-left a:hover{color:#DAA50B}
+.edrpou-val{color:#DAA50B;font-weight:700}
+.lang-switcher{display:flex;align-items:center;gap:4px}
+.lang-switcher span{opacity:.4}
+.lang-btn{background:none;border:none;cursor:pointer;font-family:'Montserrat',sans-serif;font-weight:700;font-size:12.5px;letter-spacing:.06em;padding:4px 6px;color:#9fb3c8;border-bottom:2px solid transparent;transition:color .15s,border-color .15s}
+.lang-btn.active{color:#DAA50B;border-bottom:2px solid #DAA50B}
+.nav-row{max-width:1200px;margin:0 auto;padding:0 28px;height:72px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.site-logo img{height:46px;width:auto}
+nav{display:flex;align-items:center;gap:24px;font-family:'Montserrat',sans-serif;font-weight:600;font-size:14px;letter-spacing:.01em}
+nav a{color:#26405c;padding:6px 0;border-bottom:2px solid transparent;transition:color .15s,border-color .15s}
+nav a:hover{color:#084785;border-bottom-color:#DAA50B}
+nav .nav-cta{color:#fff;background:#084785;font-weight:700;padding:11px 20px;border-radius:2px;border-bottom:none;transition:background .15s}
+nav .nav-cta:hover{background:#0a5aa8}
+
+/* HERO */
+#top{position:relative;background:#062F58}
+.hero-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 42%}
+.hero-overlay{position:absolute;inset:0;background:linear-gradient(100deg,rgba(6,38,72,.95) 0%,rgba(7,46,90,.86) 42%,rgba(7,46,90,.5) 100%)}
+.hero-trident{position:absolute;top:0;right:0;bottom:0;width:46%;background:url('/assets/trident-gold.png') no-repeat right -60px top 40%;background-size:auto 118%;opacity:.10;mix-blend-mode:screen}
+.hero-inner{position:relative;max-width:1200px;margin:0 auto;padding:96px 28px 104px}
+.hero-content{max-width:720px}
+.hero-kicker{display:inline-flex;align-items:center;gap:12px;color:#DAA50B;font-family:'Montserrat',sans-serif;font-weight:700;font-size:13px;letter-spacing:.18em;text-transform:uppercase;margin-bottom:26px}
+.hero-kicker-line{width:34px;height:2px;background:#DAA50B;display:inline-block}
+.hero-title-1{font-family:'Montserrat',sans-serif;font-weight:900;color:#fff;font-size:62px;line-height:1.02;letter-spacing:-.01em;text-transform:uppercase;margin-bottom:8px}
+.hero-title-2{font-family:'Montserrat',sans-serif;font-weight:900;color:#DAA50B;font-size:62px;line-height:1.02;letter-spacing:-.01em;text-transform:uppercase;margin-bottom:26px}
+.hero-sub{color:#dde7f2;font-size:19px;line-height:1.6;margin-bottom:30px;max-width:600px}
+.hero-note{display:inline-flex;align-items:center;gap:12px;background:rgba(255,255,255,.08);border:1px solid rgba(218,165,11,.5);padding:14px 22px;border-radius:3px;font-family:'Montserrat',sans-serif;font-weight:700;color:#fff;font-size:17px;letter-spacing:.01em}
+.hero-chips{display:flex;gap:30px;margin-top:42px;flex-wrap:wrap}
+.hero-chip{display:flex;align-items:center;gap:11px;color:#c2d2e4;font-size:14.5px}
+.hero-chip-dot{width:8px;height:8px;background:#DAA50B;border-radius:50%;display:inline-block;flex:none}
+
+/* STATS */
+.stats-strip{background:#084785;border-bottom:4px solid #DAA50B}
+.stats-inner{max-width:1200px;margin:0 auto;padding:54px 28px;display:grid;grid-template-columns:repeat(6,1fr);gap:18px}
+.stat-cell{text-align:center;padding:6px 4px;border-right:1px solid rgba(255,255,255,.12)}
+.stat-cell:last-child{border-right:none}
+.stat-num{font-family:'Montserrat',sans-serif;font-weight:800;color:#fff;font-size:42px;line-height:1;letter-spacing:-.01em}
+.stat-divider{width:26px;height:2px;background:#DAA50B;margin:12px auto}
+.stat-label{color:#bcd0e6;font-size:13px;line-height:1.4;letter-spacing:.01em}
+
+/* ABOUT */
+#about{background:#fff;padding:96px 0}
+.about-inner{max-width:1200px;margin:0 auto;padding:0 28px;display:grid;grid-template-columns:1.05fr .95fr;gap:64px;align-items:center}
+.section-kicker{display:inline-flex;align-items:center;gap:12px;color:#084785;font-family:'Montserrat',sans-serif;font-weight:700;font-size:12.5px;letter-spacing:.18em;text-transform:uppercase;margin-bottom:18px}
+.section-kicker-line{width:30px;height:2px;background:#DAA50B;display:inline-block}
+.section-title{font-family:'Montserrat',sans-serif;font-weight:800;font-size:36px;line-height:1.12;color:#16202B;margin-bottom:24px;letter-spacing:-.01em}
+.about-p{font-size:16.5px;line-height:1.74;color:#3c4a5a;margin-bottom:18px}
+.about-p:last-of-type{margin-bottom:30px}
+.mission-block{border-left:4px solid #DAA50B;background:#F3F6FA;padding:22px 26px;border-radius:0 3px 3px 0}
+.mission-label{font-family:'Montserrat',sans-serif;font-weight:700;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:#084785;margin-bottom:9px}
+.mission-text{font-size:16px;line-height:1.66;color:#27384a;font-style:italic}
+.about-img-wrap{position:relative}
+.about-corner-tl{position:absolute;top:-16px;left:-16px;width:120px;height:120px;border:3px solid #DAA50B;border-right:none;border-bottom:none;opacity:.7}
+.about-corner-br{position:absolute;bottom:-16px;right:-16px;width:120px;height:120px;border:3px solid #084785;border-left:none;border-top:none;opacity:.6}
+.about-img{width:100%;height:480px;object-fit:cover;border-radius:3px;position:relative;box-shadow:0 24px 50px rgba(8,40,75,.18)}
+
+/* DIRECTIONS */
+#directions{background:#F3F6FA;padding:92px 0;border-top:1px solid #E3E8EF;border-bottom:1px solid #E3E8EF}
+.dir-inner{max-width:1200px;margin:0 auto;padding:0 28px}
+.section-header-center{text-align:center;max-width:680px;margin:0 auto 54px}
+.section-kicker-center{display:inline-flex;align-items:center;gap:12px;color:#084785;font-family:'Montserrat',sans-serif;font-weight:700;font-size:12.5px;letter-spacing:.18em;text-transform:uppercase;margin-bottom:16px}
+.section-kicker-center .section-kicker-line{width:30px;height:2px;background:#DAA50B;display:inline-block}
+.section-sub{font-size:16.5px;line-height:1.66;color:#5a6675}
+.dir-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
+.dir-card{background:#fff;border:1px solid #E3E8EF;border-radius:4px;padding:34px 32px;display:flex;gap:22px;transition:box-shadow .2s,transform .2s}
+.dir-card:hover{box-shadow:0 18px 40px rgba(8,40,75,.12);transform:translateY(-3px)}
+.dir-no{flex:none;width:56px;height:56px;background:#084785;border-radius:3px;display:flex;align-items:center;justify-content:center}
+.dir-no span{font-family:'Montserrat',sans-serif;font-weight:800;color:#DAA50B;font-size:22px}
+.dir-card-title{font-family:'Montserrat',sans-serif;font-weight:700;font-size:20px;color:#16202B;margin:4px 0 12px}
+.dir-card-text{font-size:15.5px;line-height:1.62;color:#54616f}
+
+/* PHOTO BAND */
+.photo-band{display:grid;grid-template-columns:repeat(3,1fr);gap:0}
+.photo-band img{width:100%;height:320px;object-fit:cover}
+
+/* RESULTS */
+#results{background:#062F58;padding:94px 0;position:relative}
+.results-trident{position:absolute;inset:0;background:url('/assets/trident-gold.png') no-repeat left -120px center;background-size:auto 150%;opacity:.05}
+.results-inner{position:relative;max-width:1200px;margin:0 auto;padding:0 28px}
+.results-header{max-width:760px;margin-bottom:50px}
+.section-kicker-gold{display:inline-flex;align-items:center;gap:12px;color:#DAA50B;font-family:'Montserrat',sans-serif;font-weight:700;font-size:12.5px;letter-spacing:.18em;text-transform:uppercase;margin-bottom:16px}
+.section-kicker-gold .section-kicker-line{background:#DAA50B}
+.section-title-white{font-family:'Montserrat',sans-serif;font-weight:800;font-size:36px;line-height:1.14;color:#fff;margin-bottom:14px;letter-spacing:-.01em}
+.results-sub-text{font-size:16.5px;line-height:1.66;color:#b8cae0}
+.results-cols{display:grid;grid-template-columns:1fr 1fr 1fr;gap:30px;margin-bottom:46px}
+.result-col-title{font-family:'Montserrat',sans-serif;font-weight:700;font-size:16px;color:#fff;margin-bottom:18px;padding-bottom:14px;border-bottom:2px solid rgba(218,165,11,.5);text-transform:uppercase;letter-spacing:.04em}
+.result-row{display:flex;gap:11px;padding:8px 0;color:#cdd9e8;font-size:15px;line-height:1.45;border-bottom:1px solid rgba(255,255,255,.07)}
+.result-row-arrow{color:#DAA50B;flex:none;font-weight:700}
+.fronts-row{border-top:1px solid rgba(255,255,255,.12);padding-top:34px;display:flex;align-items:center;gap:18px;flex-wrap:wrap}
+.fronts-label{font-family:'Montserrat',sans-serif;font-weight:700;font-size:13px;color:#fff;text-transform:uppercase;letter-spacing:.1em;margin-right:6px}
+.front-badge{display:inline-flex;align-items:center;gap:9px;background:rgba(218,165,11,.12);border:1px solid rgba(218,165,11,.4);color:#f0d79a;font-family:'Montserrat',sans-serif;font-weight:600;font-size:14px;padding:9px 18px;border-radius:2px}
+.front-dot{width:7px;height:7px;background:#DAA50B;border-radius:50%}
+
+/* REGISTRY */
+#registry{background:#fff;padding:92px 0}
+.registry-inner{max-width:1200px;margin:0 auto;padding:0 28px}
+.registry-header{max-width:760px;margin-bottom:46px}
+.registry-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.registry-card{display:flex;gap:0;border:1px solid #E3E8EF;border-radius:4px;background:#fff;overflow:hidden;transition:box-shadow .18s}
+.registry-card:hover{box-shadow:0 12px 28px rgba(8,40,75,.1)}
+.registry-card-left{flex:none;width:122px;padding:16px 14px;background:#F3F6FA;border-right:3px solid #DAA50B}
+.registry-unit{font-family:'Montserrat',sans-serif;font-weight:800;color:#084785;font-size:17px;letter-spacing:.01em;line-height:1}
+.registry-place{margin-top:7px;color:#7a8696;font-size:11.5px;line-height:1.35}
+.registry-card-right{padding:16px 18px;display:flex;align-items:center}
+.registry-items{font-size:14.5px;line-height:1.52;color:#3c4a5a}
+.registry-more{margin:28px 0 0;text-align:center;color:#9aa6b4;font-size:15px;font-style:italic}
+
+/* GRATITUDE */
+#gratitude{background:#F3F6FA;padding:92px 0;border-top:1px solid #E3E8EF;border-bottom:1px solid #E3E8EF}
+.gratitude-inner{max-width:1200px;margin:0 auto;padding:0 28px}
+.gratitude-header{text-align:center;max-width:720px;margin:0 auto 50px}
+.docs-grid{display:grid;grid-template-columns:1fr 1fr;gap:30px;max-width:900px;margin:0 auto 56px;align-items:start}
+.doc-card{background:#fff;border:1px solid #E3E8EF;border-radius:5px;padding:18px;box-shadow:0 18px 40px rgba(8,40,75,.1)}
+.doc-badge{display:inline-flex;align-items:center;gap:8px;font-family:'Montserrat',sans-serif;font-weight:700;font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;padding:7px 14px;border-radius:2px;margin-bottom:14px}
+.doc-badge-blue{background:#084785;color:#fff}
+.doc-badge-gold{background:#DAA50B;color:#3a2c00}
+.doc-img{width:100%;height:auto;border:1px solid #E3E8EF;border-radius:3px;display:block}
+.doc-caption{margin-top:14px;font-size:14px;color:#5a6675;line-height:1.5}
+.units-panel{background:#084785;border-radius:5px;padding:38px 40px;display:flex;align-items:center;gap:36px;flex-wrap:wrap}
+.units-stat-block{flex:none;text-align:center;padding-right:36px;border-right:1px solid rgba(255,255,255,.16)}
+.units-stat-num{font-family:'Montserrat',sans-serif;font-weight:800;color:#DAA50B;font-size:54px;line-height:1}
+.units-stat-label{color:#bcd0e6;font-size:13.5px;line-height:1.4;max-width:180px;margin-top:6px}
+.units-list-wrap{flex:1;min-width:300px}
+.units-list-label{font-family:'Montserrat',sans-serif;font-weight:700;font-size:12.5px;letter-spacing:.08em;text-transform:uppercase;color:#9fc0e2;margin-bottom:16px}
+.units-badges{display:flex;flex-wrap:wrap;gap:7px}
+.unit-badge{font-family:'Montserrat',sans-serif;font-weight:600;font-size:13px;color:#e6edf5;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.16);padding:6px 11px;border-radius:2px}
+
+/* PARTNERS */
+.partners-section{background:#fff;padding:56px 0}
+.partners-inner{max-width:1100px;margin:0 auto;padding:0 28px;text-align:center}
+.partners-title{font-family:'Montserrat',sans-serif;font-weight:700;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:#9aa6b4;margin-bottom:16px}
+.partners-text{max-width:760px;margin:0 auto;font-size:16.5px;line-height:1.7;color:#3c4a5a}
+
+/* CONTACTS */
+#contacts{background:#F3F6FA;padding:90px 0;border-top:1px solid #E3E8EF}
+.contacts-inner{max-width:1200px;margin:0 auto;padding:0 28px;display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:start}
+.contacts-title{font-family:'Montserrat',sans-serif;font-weight:800;font-size:34px;line-height:1.14;color:#16202B;margin-bottom:28px;letter-spacing:-.01em}
+.contact-rows{display:flex;flex-direction:column;gap:4px}
+.contact-row{display:flex;gap:16px;padding:18px 0;border-bottom:1px solid #E3E8EF}
+.contact-row:last-child{border-bottom:none}
+.contact-label{flex:none;width:130px;font-family:'Montserrat',sans-serif;font-weight:700;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:#7a8696;padding-top:2px}
+.contact-val{font-size:16px;color:#27384a;line-height:1.5}
+.contact-link{font-size:16px;color:#084785;font-weight:700;transition:color .15s}
+.contact-link:hover{color:#DAA50B}
+.contact-card{background:#084785;border-radius:4px;padding:46px 42px;text-align:center;box-shadow:0 24px 50px rgba(8,40,75,.18)}
+.contact-card-logo{width:150px;height:150px;object-fit:contain;margin:0 auto 24px}
+.contact-card-title{font-family:'Montserrat',sans-serif;font-weight:800;color:#fff;font-size:23px;margin-bottom:6px;text-transform:uppercase;letter-spacing:.01em}
+.contact-card-sub{color:#bcd0e6;font-size:15px;line-height:1.6;margin-bottom:26px}
+.contact-card-note{display:inline-flex;align-items:center;gap:12px;background:rgba(218,165,11,.14);border:1px solid rgba(218,165,11,.45);padding:14px 24px;border-radius:3px;font-family:'Montserrat',sans-serif;font-weight:700;color:#fff;font-size:16px}
+
+/* FOOTER */
+footer{background:#062235;color:#9fb0c2;padding:40px 0}
+.footer-inner{max-width:1200px;margin:0 auto;padding:0 28px;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap}
+.footer-brand{display:flex;align-items:center;gap:14px}
+.footer-brand img{width:40px;height:40px;object-fit:contain}
+.footer-name{font-family:'Montserrat',sans-serif;font-weight:700;color:#e6edf5;font-size:14px;letter-spacing:.02em}
+.footer-rights{font-size:13px;color:#74859a}
