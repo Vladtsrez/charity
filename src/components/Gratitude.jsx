@@ -1,6 +1,6 @@
 import { DATA } from '../data'
 
-export default function Gratitude({ t }) {
+export default function Gratitude({ t, setPage }) {
   return (
     <section id="gratitude">
       <div className="gratitude-inner">
@@ -14,16 +14,16 @@ export default function Gratitude({ t }) {
           <p className="section-sub">{t.gratSub}</p>
         </div>
         <div className="docs-grid">
-          <div className="doc-card">
+          <button className="doc-card doc-card-clickable" onClick={() => setPage('docs')}>
             <div className="doc-badge doc-badge-blue">{t.reqLabel}</div>
-            <img className="doc-img" src="/assets/doc-request.jpg" alt="Офіційний запит від військової частини" />
+            <img className="doc-img" src="/assets/doc-request.webp" alt="Офіційний запит від військової частини" />
             <p className="doc-caption">{t.docReqCaption}</p>
-          </div>
-          <div className="doc-card">
+          </button>
+          <button className="doc-card doc-card-clickable" onClick={() => setPage('docs')}>
             <div className="doc-badge doc-badge-gold">{t.gratLabel}</div>
-            <img className="doc-img" src="/assets/doc-gratitude.jpg" alt="Подяка від військової частини" />
+            <img className="doc-img" src="/assets/doc-gratitude.webp" alt="Подяка від військової частини" />
             <p className="doc-caption">{t.docGratCaption}</p>
-          </div>
+          </button>
         </div>
         <div className="units-panel">
           <div className="units-stat-block">

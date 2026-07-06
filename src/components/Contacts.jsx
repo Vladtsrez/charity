@@ -29,7 +29,7 @@ export default function Contacts({ t }) {
           </div>
         </div>
         <div className="contact-card">
-          <img className="contact-card-logo" src="/assets/logo-circle-white.png" alt="Миколаїв Нескорений" />
+          <img className="contact-card-logo" src="/assets/logo-circle-white.webp" alt="Миколаїв Нескорений" />
           <h3 className="contact-card-title">{t.cardTitle}</h3>
           <p className="contact-card-sub">{t.cardSub}</p>
           <div className="contact-card-note"><span>{t.heroNote}</span></div>

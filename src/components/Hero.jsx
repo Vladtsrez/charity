@@ -1,7 +1,7 @@
 export default function Hero({ t }) {
   return (
     <section id="top">
-      <img className="hero-bg" src="/assets/hero-fleet.jpg" alt="" />
+      <img className="hero-bg" src="/assets/hero-fleet.webp" alt="" />
       <div className="hero-overlay"></div>
       <div className="hero-trident"></div>
       <div className="hero-inner">

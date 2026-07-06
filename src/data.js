@@ -1,6 +1,6 @@
 export const DICT = {
   uk: {
-    navAbout:'Про фонд', navDirections:'Напрямки', navRegistry:'Реєстр', navGratitude:'Подяки', navContacts:'Контакти',
+    navAbout:'Про фонд', navDirections:'Напрямки', navRegistry:'Реєстр', navGratitude:'Подяки', navRequisites:'Реквізити', navContacts:'Контакти',
     heroKicker:'Благодійний фонд • з 2022 року',
     heroTitle1:'Миколаїв', heroTitle2:'Нескорений',
     heroSub:'Підтримуємо Збройні Сили України та цивільне населення, яке постраждало від війни, — від перших днів повномасштабного вторгнення.',
@@ -40,7 +40,7 @@ export const DICT = {
     footerRights:'© 2022\u20132026 Благодійний фонд «Миколаїв Нескорений». Усі права захищено.'
   },
   en: {
-    navAbout:'About', navDirections:'What we do', navRegistry:'Registry', navGratitude:'Gratitude', navContacts:'Contacts',
+    navAbout:'About', navDirections:'What we do', navRegistry:'Registry', navGratitude:'Gratitude', navRequisites:'Details', navContacts:'Contacts',
     heroKicker:'Charity Fund \u2022 since 2022',
     heroTitle1:'Mykolaiv', heroTitle2:'Invictus',
     heroSub:'We support the Armed Forces of Ukraine and civilians affected by the war \u2014 from the very first days of the full-scale invasion.',

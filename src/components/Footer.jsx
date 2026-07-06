@@ -3,7 +3,7 @@ export default function Footer({ t }) {
     <footer>
       <div className="footer-inner">
         <div className="footer-brand">
-          <img src="/assets/logo-circle-white.png" alt="" />
+          <img src="/assets/logo-circle-white.webp" alt="" />
           <span className="footer-name">{t.footerName}</span>
         </div>
         <span className="footer-rights">{t.footerRights}</span>

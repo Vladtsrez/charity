@@ -14,7 +14,7 @@ export default function About({ t }) {
         </div>
         <div className="about-img-wrap">
           <div className="about-corner-tl"></div>
-          <img className="about-img" src="/assets/zsu-handover.jpg" alt="Передача допомоги військовим" />
+          <img className="about-img" src="/assets/zsu-handover.webp" alt="Передача допомоги військовим" />
           <div className="about-corner-br"></div>
         </div>
       </div>

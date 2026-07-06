@@ -9,21 +9,48 @@ import PhotoBand from './components/PhotoBand'
 import Results from './components/Results'
 import Registry from './components/Registry'
 import Gratitude from './components/Gratitude'
-import Partners from './components/Partners'
+import Requisites from './components/Requisites'
 import Contacts from './components/Contacts'
 import Footer from './components/Footer'
+import DocumentsPage from './components/DocumentsPage'
+import RequisitesPage from './components/RequisitesPage'
 
 export default function App() {
   const [lang, setLang] = useState('uk')
+  const [page, setPage] = useState('home')
   const t = DICT[lang]
 
   useEffect(() => {
     document.documentElement.lang = lang
   }, [lang])
 
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [page])
+
+  if (page === 'docs') {
+    return (
+      <>
+        <Header lang={lang} setLang={setLang} t={t} page={page} setPage={setPage} />
+        <DocumentsPage lang={lang} t={t} onBack={() => setPage('home')} />
+        <Footer t={t} />
+      </>
+    )
+  }
+
+  if (page === 'requisites') {
+    return (
+      <>
+        <Header lang={lang} setLang={setLang} t={t} page={page} setPage={setPage} />
+        <RequisitesPage lang={lang} onBack={() => setPage('home')} />
+        <Footer t={t} />
+      </>
+    )
+  }
+
   return (
     <>
-      <Header lang={lang} setLang={setLang} t={t} />
+      <Header lang={lang} setLang={setLang} t={t} page={page} setPage={setPage} />
       <Hero t={t} />
       <StatsStrip lang={lang} />
       <About t={t} />
@@ -31,8 +58,8 @@ export default function App() {
       <PhotoBand />
       <Results lang={lang} t={t} />
       <Registry lang={lang} t={t} />
-      <Gratitude lang={lang} t={t} />
-      <Partners t={t} />
+      <Gratitude lang={lang} t={t} setPage={setPage} />
+      <Requisites lang={lang} setPage={setPage} />
       <Contacts t={t} />
       <Footer t={t} />
     </>
