@@ -37,6 +37,8 @@ export const DICT = {
     cardTitle:'Миколаїв Нескорений',
     cardSub:'Благодійна організація «Благодійний фонд «Миколаїв Нескорений»',
     footerName:'БФ «Миколаїв Нескорений»',
+    footerOferta:'Публічна оферта',
+    footerRefund:'Повернення коштів',
     footerRights:'© 2022\u20132026 Благодійний фонд «Миколаїв Нескорений». Усі права захищено.'
   },
   en: {
@@ -77,6 +79,8 @@ export const DICT = {
     cardTitle:'Mykolaiv Invictus',
     cardSub:'Charity organisation \u00abMykolaiv Invictus Charity Fund\u00bb',
     footerName:'CF \u00abMykolaiv Invictus\u00bb',
+    footerOferta:'Public Offer Agreement',
+    footerRefund:'Refund Policy',
     footerRights:'© 2022\u20132026 \u00abMykolaiv Invictus\u00bb Charity Fund. All rights reserved.'
   }
 }

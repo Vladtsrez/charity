@@ -15,6 +15,7 @@ import Footer from './components/Footer'
 import DocumentsPage from './components/DocumentsPage'
 import RequisitesPage from './components/RequisitesPage'
 import OfertaPage from './components/OfertaPage'
+import RefundPage from './components/RefundPage'
 
 export default function App() {
   const [lang, setLang] = useState('uk')
@@ -34,7 +35,7 @@ export default function App() {
       <>
         <Header lang={lang} setLang={setLang} t={t} page={page} setPage={setPage} />
         <DocumentsPage lang={lang} t={t} onBack={() => setPage('home')} />
-        <Footer t={t} />
+        <Footer t={t} setPage={setPage} />
       </>
     )
   }
@@ -44,7 +45,7 @@ export default function App() {
       <>
         <Header lang={lang} setLang={setLang} t={t} page={page} setPage={setPage} />
         <RequisitesPage lang={lang} onBack={() => setPage('home')} setPage={setPage} />
-        <Footer t={t} />
+        <Footer t={t} setPage={setPage} />
       </>
     )
   }
@@ -54,7 +55,17 @@ export default function App() {
       <>
         <Header lang={lang} setLang={setLang} t={t} page={page} setPage={setPage} />
         <OfertaPage lang={lang} onBack={() => setPage('requisites')} />
-        <Footer t={t} />
+        <Footer t={t} setPage={setPage} />
+      </>
+    )
+  }
+
+  if (page === 'refund') {
+    return (
+      <>
+        <Header lang={lang} setLang={setLang} t={t} page={page} setPage={setPage} />
+        <RefundPage lang={lang} onBack={() => setPage('home')} />
+        <Footer t={t} setPage={setPage} />
       </>
     )
   }
@@ -72,7 +83,7 @@ export default function App() {
       <Gratitude lang={lang} t={t} setPage={setPage} />
       <Requisites lang={lang} setPage={setPage} />
       <Contacts t={t} />
-      <Footer t={t} />
+      <Footer t={t} setPage={setPage} />
     </>
   )
 }

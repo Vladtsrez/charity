@@ -104,3 +104,10 @@ export const REQ_DOCS = [
   {preview:'/docs/previews/requests/doc-А0666-94-1.webp',pdf:'/docs/requests/Лист до БФ А0666.pdf',type:'Лист',unit:'А0666'},
   {preview:'/docs/previews/requests/doc-95-Лист-до-БФ-1.webp',pdf:'/docs/requests/Лист до БФ.PDF',type:'Лист',unit:null},
 ]
+
+// Statutory / legal documents for payment processor verification.
+// Place PDF files in /public/docs/legal/ and add entries here.
+export const LEGAL_DOCS = [
+  // { title_uk: 'Статут фонду', title_en: 'Fund Charter', pdf: '/docs/legal/statut.pdf', date_uk: '2022', date_en: '2022' },
+  // { title_uk: 'Витяг з Єдиного реєстру', title_en: 'Unified Register Extract', pdf: '/docs/legal/register.pdf', date_uk: '2022', date_en: '2022' },
+]

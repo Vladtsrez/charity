@@ -294,12 +294,39 @@ nav .nav-cta:hover{background:#0a5aa8}
 .oferta-appendix-subtitle{font-family:'Montserrat',sans-serif;font-weight:700;font-size:14px;color:#26405c;text-transform:uppercase;letter-spacing:.04em;margin-bottom:20px;margin-top:4px}
 
 /* FOOTER */
-footer{background:#062235;color:#9fb0c2;padding:40px 0}
-.footer-inner{max-width:1200px;margin:0 auto;padding:0 28px;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap}
+footer{background:#062235;color:#9fb0c2}
+.footer-top{border-bottom:1px solid rgba(255,255,255,.07);padding:36px 0}
+.footer-top-inner{max-width:1200px;margin:0 auto;padding:0 28px;display:flex;align-items:center;justify-content:space-between;gap:32px;flex-wrap:wrap}
 .footer-brand{display:flex;align-items:center;gap:14px}
 .footer-brand img{width:40px;height:40px;object-fit:contain}
 .footer-name{font-family:'Montserrat',sans-serif;font-weight:700;color:#e6edf5;font-size:14px;letter-spacing:.02em}
-.footer-rights{font-size:13px;color:#74859a}
+.footer-edrpou{font-size:11.5px;color:#74859a;margin-top:2px;letter-spacing:.04em}
+.footer-legal-links{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.footer-legal-btn{background:none;border:none;cursor:pointer;font-family:'PT Sans','Montserrat',sans-serif;font-size:13px;color:#9fb0c2;padding:0;transition:color .15s;text-decoration:underline;text-decoration-color:rgba(255,255,255,.2);text-underline-offset:2px}
+.footer-legal-btn:hover{color:#DAA50B;text-decoration-color:#DAA50B}
+.footer-sep{color:#3a5068;font-size:12px}
+.footer-pay-logos{display:flex;align-items:center;gap:10px}
+.pay-logo{width:60px;height:38px;border-radius:4px;display:block}
+.footer-bottom{padding:20px 0}
+.footer-bottom-inner{max-width:1200px;margin:0 auto;padding:0 28px}
+.footer-rights{font-size:12.5px;color:#4d6678}
+
+/* LEGAL DOCS TAB */
+.legal-docs-grid{display:flex;flex-direction:column;gap:12px;max-width:800px}
+.legal-doc-card{display:flex;align-items:center;gap:20px;background:#fff;border:1px solid #dde3ed;border-radius:6px;padding:20px 24px;text-decoration:none;color:inherit;transition:box-shadow .2s,transform .2s}
+.legal-doc-card:not(.legal-doc-card-pending):hover{box-shadow:0 8px 24px rgba(8,40,75,.1);transform:translateX(4px)}
+.legal-doc-card-pending{opacity:.65;cursor:default}
+.legal-doc-icon{flex:none;width:48px;height:48px;background:#f0f4f8;border-radius:6px;display:flex;align-items:center;justify-content:center;color:#084785}
+.legal-doc-info{flex:1}
+.legal-doc-title{font-family:'Montserrat',sans-serif;font-weight:700;font-size:15px;color:#16202B;margin-bottom:4px}
+.legal-doc-desc{font-size:13.5px;color:#7a8898;line-height:1.5}
+.legal-doc-status{flex:none;font-family:'Montserrat',sans-serif;font-weight:700;font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:#9fb0c2;background:#f0f4f8;padding:5px 10px;border-radius:20px}
+.legal-doc-dl{flex:none;font-family:'Montserrat',sans-serif;font-weight:700;font-size:13px;color:#084785;background:#eef2f8;padding:8px 16px;border-radius:4px}
+
+/* REFUND PAGE */
+.refund-contact-block{background:#f0f4f8;border-radius:4px;padding:16px 22px;margin:12px 0 16px;display:inline-block}
+.refund-email{font-family:'Montserrat',sans-serif;font-weight:700;font-size:16px;color:#084785;text-decoration:none}
+.refund-email:hover{color:#DAA50B}
 
 /* HAMBURGER */
 .hamburger{display:none;flex-direction:column;justify-content:center;align-items:center;gap:5px;width:40px;height:40px;background:none;border:none;cursor:pointer;padding:4px;border-radius:3px;flex-shrink:0}
@@ -432,4 +459,6 @@ footer{background:#062235;color:#9fb0c2;padding:40px 0}
 
   /* Footer */
   .footer-inner{flex-direction:column;align-items:flex-start;gap:12px;padding:0 16px}
+  .footer-top-inner{flex-direction:column;align-items:flex-start;gap:20px;padding:0 16px}
+  .footer-bottom-inner{padding:0 16px}
 }
