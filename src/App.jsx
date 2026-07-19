@@ -14,6 +14,7 @@ import Contacts from './components/Contacts'
 import Footer from './components/Footer'
 import DocumentsPage from './components/DocumentsPage'
 import RequisitesPage from './components/RequisitesPage'
+import OfertaPage from './components/OfertaPage'
 
 export default function App() {
   const [lang, setLang] = useState('uk')
@@ -42,7 +43,17 @@ export default function App() {
     return (
       <>
         <Header lang={lang} setLang={setLang} t={t} page={page} setPage={setPage} />
-        <RequisitesPage lang={lang} onBack={() => setPage('home')} />
+        <RequisitesPage lang={lang} onBack={() => setPage('home')} setPage={setPage} />
+        <Footer t={t} />
+      </>
+    )
+  }
+
+  if (page === 'oferta') {
+    return (
+      <>
+        <Header lang={lang} setLang={setLang} t={t} page={page} setPage={setPage} />
+        <OfertaPage lang={lang} onBack={() => setPage('requisites')} />
         <Footer t={t} />
       </>
     )

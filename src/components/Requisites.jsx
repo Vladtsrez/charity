@@ -55,6 +55,9 @@ export default function Requisites({ lang, setPage }) {
           <button className="req-full-btn" onClick={() => setPage('requisites')}>
             {lang === 'uk' ? 'Усі реквізити →' : 'Full details →'}
           </button>
+          <button className="req-oferta-strip-btn" onClick={() => setPage('oferta')}>
+            {lang === 'uk' ? 'Договір оферти' : 'Public Offer'}
+          </button>
         </div>
       </div>
     </section>

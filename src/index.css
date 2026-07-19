@@ -253,6 +253,46 @@ nav .nav-cta:hover{background:#0a5aa8}
 .doc-modal-iframe{width:100%;height:75vh;border:none;display:block}
 .doc-modal-img{width:100%;height:auto;display:block}
 
+/* OFERTA BUTTON on RequisitesPage hero */
+.docs-back-row{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;margin-bottom:32px}
+.docs-back-row .docs-back-btn{margin-bottom:0}
+.req-oferta-btn{background:none;border:1px solid rgba(218,165,11,.5);color:#DAA50B;font-family:'Montserrat',sans-serif;font-weight:700;font-size:13px;letter-spacing:.04em;padding:8px 18px;border-radius:3px;cursor:pointer;transition:background .15s,border-color .15s,color .15s;white-space:nowrap}
+.req-oferta-btn:hover{background:#DAA50B;border-color:#DAA50B;color:#fff}
+
+/* OFERTA acceptance note on RequisitesPage */
+.req-oferta-note{background:#fffbee;border:1px solid rgba(218,165,11,.35);border-left:4px solid #DAA50B;border-radius:0 4px 4px 0;padding:16px 22px;margin-bottom:40px;font-size:14.5px;line-height:1.6;color:#4a5f78}
+.req-oferta-note p{margin:0}
+.req-oferta-link{background:none;border:none;padding:0;cursor:pointer;color:#084785;font-weight:700;font-size:inherit;font-family:inherit;text-decoration:underline;text-decoration-color:rgba(8,71,133,.35);text-underline-offset:2px;transition:color .15s}
+.req-oferta-link:hover{color:#DAA50B;text-decoration-color:#DAA50B}
+
+/* OFERTA strip button on home Requisites section */
+.req-strip-right{display:flex;flex-direction:column;align-items:flex-start;gap:12px}
+.req-oferta-strip-btn{background:none;border:none;padding:0;cursor:pointer;color:rgba(218,165,11,.7);font-family:'Montserrat',sans-serif;font-weight:600;font-size:12px;letter-spacing:.04em;text-decoration:underline;text-decoration-color:rgba(218,165,11,.35);text-underline-offset:2px;transition:color .15s}
+.req-oferta-strip-btn:hover{color:#DAA50B}
+
+/* OFERTA DOCUMENT PAGE */
+.oferta-doc{max-width:800px;background:#fff;border:1px solid #dde3ed;border-radius:6px;padding:48px 56px;box-shadow:0 4px 18px rgba(8,40,75,.06)}
+.oferta-main-title{font-family:'Montserrat',sans-serif;font-weight:900;font-size:20px;text-align:center;text-transform:uppercase;color:#16202B;letter-spacing:.02em;line-height:1.4;margin-bottom:32px;padding-bottom:28px;border-bottom:2px solid #DAA50B}
+.oferta-intro{font-size:15px;line-height:1.74;color:#3c4a5a;margin-bottom:36px}
+.oferta-section{margin-bottom:32px}
+.oferta-section p{font-size:15px;line-height:1.74;color:#3c4a5a;margin-bottom:12px}
+.oferta-section p:last-child{margin-bottom:0}
+.oferta-section-title{font-family:'Montserrat',sans-serif;font-weight:800;font-size:16px;color:#084785;margin-bottom:14px;padding-bottom:8px;border-bottom:1px solid #eef1f6;text-transform:uppercase;letter-spacing:.04em}
+.oferta-subsection-title{font-family:'Montserrat',sans-serif;font-weight:700;font-size:14.5px;color:#26405c;margin-top:16px;margin-bottom:8px}
+.oferta-dl{display:flex;flex-direction:column;gap:16px}
+.oferta-dl-item dt{font-family:'Montserrat',sans-serif;font-weight:700;font-size:14px;color:#16202B;margin-bottom:4px}
+.oferta-dl-item dd{margin:0;font-size:14.5px;line-height:1.7;color:#3c4a5a;padding-left:16px;border-left:3px solid #DAA50B}
+.oferta-ul{padding-left:20px;margin:8px 0 16px}
+.oferta-ul li{font-size:14.5px;line-height:1.7;color:#3c4a5a;margin-bottom:8px}
+.oferta-ul li:last-child{margin-bottom:0}
+.oferta-requisites{background:#f5f7fa;border:1px solid #dde3ed;border-radius:4px;padding:20px 24px;font-size:14.5px;line-height:1.74;color:#3c4a5a}
+.oferta-requisites p{margin-bottom:6px}
+.oferta-requisites p:last-child{margin-bottom:0}
+.oferta-footer-note{border-top:1px solid #eef1f6;padding-top:20px;margin-bottom:32px;font-size:14px;color:#7a8898;line-height:1.6}
+.oferta-footer-note p{margin-bottom:4px}
+.oferta-appendix{border-top:2px solid #eef1f6;padding-top:32px;margin-top:4px}
+.oferta-appendix-subtitle{font-family:'Montserrat',sans-serif;font-weight:700;font-size:14px;color:#26405c;text-transform:uppercase;letter-spacing:.04em;margin-bottom:20px;margin-top:4px}
+
 /* FOOTER */
 footer{background:#062235;color:#9fb0c2;padding:40px 0}
 .footer-inner{max-width:1200px;margin:0 auto;padding:0 28px;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap}

@@ -64,16 +64,21 @@ function FieldRow({ label, value, copy, lang }) {
   )
 }
 
-export default function RequisitesPage({ lang, onBack }) {
+export default function RequisitesPage({ lang, onBack, setPage }) {
   const uahFields = lang === 'uk' ? UAH_FIELDS_UK : UAH_FIELDS_EN
 
   return (
     <div className="docs-page">
       <div className="docs-page-hero">
         <div className="docs-page-hero-inner">
-          <button className="docs-back-btn" onClick={onBack}>
-            ← {lang === 'uk' ? 'На головну' : 'Back'}
-          </button>
+          <div className="docs-back-row">
+            <button className="docs-back-btn" onClick={onBack}>
+              ← {lang === 'uk' ? 'На головну' : 'Back'}
+            </button>
+            <button className="req-oferta-btn" onClick={() => setPage('oferta')}>
+              {lang === 'uk' ? 'Договір оферти →' : 'Public Offer Agreement →'}
+            </button>
+          </div>
           <div className="section-kicker" style={{ marginBottom: 14 }}>
             <span className="section-kicker-line" style={{ background: '#DAA50B' }}></span>
             <span style={{ color: '#DAA50B' }}>{lang === 'uk' ? 'Підтримати фонд' : 'Support the fund'}</span>
@@ -118,6 +123,19 @@ export default function RequisitesPage({ lang, onBack }) {
             </div>
           </div>
 
+        </div>
+
+        {/* Oferta acceptance note */}
+        <div className="req-oferta-note">
+          <p>
+            {lang === 'uk'
+              ? 'Здійснюючи переказ на рахунок фонду, ви підтверджуєте, що ознайомились та погоджуєтесь з умовами '
+              : 'By making a transfer to the fund\'s account, you confirm that you have read and agree to the '}
+            <button className="req-oferta-link" onClick={() => setPage('oferta')}>
+              {lang === 'uk' ? 'Публічного договору (оферти)' : 'Public Agreement (Offer)'}
+            </button>
+            {lang === 'uk' ? ' про надання благодійної пожертви.' : ' on making a charitable donation.'}
+          </p>
         </div>
 
         {/* Currency table */}
