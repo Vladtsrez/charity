@@ -10,10 +10,10 @@ export default function Contacts({ t }) {
               <span className="contact-label">{t.addrLabel}</span>
               <span className="contact-val">{t.addr}</span>
             </div>
-            <div className="contact-row">
+            {/* <div className="contact-row">
               <span className="contact-label">{t.phoneLabel}</span>
               <a href="tel:+380993670651" className="contact-link">+38 099 367 06 51</a>
-            </div>
+            </div> */}
             <div className="contact-row">
               <span className="contact-label">E-mail</span>
               <a href="mailto:mykolaivneskoreni@gmail.com" className="contact-link">mykolaivneskoreni@gmail.com</a>
