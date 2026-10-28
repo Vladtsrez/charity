@@ -23,8 +23,8 @@ export default function Header({ lang, setLang, t, page, setPage }) {
         <div className="utility-inner">
           <div className="utility-left">
             <span><span className="edrpou-val">ЄДРПОУ</span> 44761877</span>
-            <span className="sep">|</span>
-            <a href="tel:+380993670651">+38 099 367 06 51</a>
+            {/* <span className="sep">|</span>
+            <a href="tel:+380993670651">+38 099 367 06 51</a> */}
           </div>
           <div className="lang-switcher">
             <button className={`lang-btn${lang === 'uk' ? ' active' : ''}`} onClick={() => setLang('uk')}>UA</button>
